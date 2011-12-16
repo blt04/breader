@@ -14,9 +14,9 @@
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Generic barcode reader keyboard wedge"
-NAME=breaderd
-DAEMON=/usr/sbin/$NAME
-DAEMON_ARGS="/dev/ttyS0"
+NAME=breader
+DAEMON=/usr/sbin/breaderd
+DAEMON_OPTS="/dev/ttyS0"
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 
@@ -45,7 +45,7 @@ do_start()
 	start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON --test > /dev/null \
 		|| return 1
 	start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON -- \
-		$DAEMON_ARGS \
+		$DAEMON_OPTS \
 		|| return 2
 }
 

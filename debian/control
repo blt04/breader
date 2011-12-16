@@ -3,7 +3,7 @@ Section: utils
 Priority: extra
 Maintainer: Brandon Turner <bturner@bltweb.net>
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 8)
+Build-Depends: debhelper (>= 7)
 Homepage: https://github.com/blt04/breader
 
 Package: breader
