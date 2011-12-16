@@ -1,0 +1,11 @@
+breader (1.0-2) unstable; urgency=low
+
+  * Repackage
+
+ -- Brandon Turner <bturner@bltweb.net>  Thu, 15 Dec 2011 15:38:47 -0600
+
+breader (1.0-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Brandon Turner <bturner@bltweb.net>  Wed, 01 Jul 2009 15:39:52 -0500

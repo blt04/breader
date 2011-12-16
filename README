@@ -1,0 +1,22 @@
+A very simple, generic barcode reader keyboard wedge
+
+Translates input from a serial/USB barcode reader into keyboard data.
+
+Usage: ./breaderd [OPTION] TTY_DEVICE
+
+TTY_DEVICE is the serial device to listen on.
+
+OPTIONS:
+  -b, --baud=BAUDRATE      : use BAUDRATE as the baud rate [default: 9600]
+  -u, --uinput=UINPUT_DEV  : location of uinput device [default: /dev/input/uinput]
+  -n, --no-daemon          : don't fork off as a daemon
+  -p, --pid-file=PIDFILE   : when daemonized, create PIDFILE pid file [default: /var/run/breaderd.pid]
+
+
+
+Notes:
+
+Make sure uinput is either compiled into your kernel, or loaded as a module:
+
+  $ modprobe uinput
+  $ echo "uinput" >> /etc/modules

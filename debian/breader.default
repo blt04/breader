@@ -1,0 +1,5 @@
+# Defaults for breader initscript
+# sourced by /etc/init.d/breader
+
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS="-u /dev/uinput /dev/ttyUSB0"

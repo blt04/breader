@@ -1,0 +1,14 @@
+Source: breader
+Section: utils
+Priority: extra
+Maintainer: Brandon Turner <bturner@bltweb.net>
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 8)
+Homepage: https://github.com/blt04/breader
+
+Package: breader
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Generic barcode reader keyboard wedge
+ A generic serial barcode reader keyboard wedge based on the
+ uinput kernel device.
